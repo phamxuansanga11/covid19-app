@@ -1,0 +1,26 @@
+.section__summary {
+  position: relative;
+  margin-top: 50px;
+  .btn__switch {
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .btn {
+      margin-left: 6px;
+      cursor: pointer;
+      width: 80px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      -webkit-box-shadow: 0px 0px 9px 0px #ccc;
+      box-shadow: 0px 0px 9px 0px #ccc;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}

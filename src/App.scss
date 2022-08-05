@@ -1,0 +1,41 @@
+@import "./scss/reset";
+@import "./scss/highlight.scss";
+@import "./scss/countrySelector.scss";
+@import "./scss/alert.scss";
+@import "./scss/loading.scss";
+@import "./scss/summary.scss";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+}
+
+.App {
+  .container {
+    .title__app {
+      font-size: 2rem;
+      color: #000;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .section__highlight .wrapper__grid {
+    grid-template-columns: 1fr;
+  }
+  .section__summary .btn__switch {
+    position: initial;
+    margin-bottom: 30px;
+  }
+}
+@media screen and(max-width: 485px) {
+  .section__countrySelector form select {
+    width: 100%;
+  }
+}
